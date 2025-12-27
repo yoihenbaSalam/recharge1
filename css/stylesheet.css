@@ -639,7 +639,7 @@ hr {
 
 @media (max-width: 991px) {
   #content {
-    padding-top: 104px;
+    padding-top: 88px;
   }
 }
 
@@ -5730,4 +5730,192 @@ body {
     width: 100%;
     text-align: left;
   }
+}
+
+
+/* =========================================
+   Smart Nav Links with Icons
+========================================= */
+
+.nav-link-smart {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;                 /* tight spacing */
+  font-size: 0.85rem;          /* slightly smaller text */
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.nav-link-smart span {
+  display: inline-block;
+}
+
+.nav-icon {
+  font-size: 1rem;             /* icon slightly bigger than text */
+  opacity: 0.9;
+}
+
+
+.header-dark .nav-link-smart {
+  color: #ffffff !important;
+}
+
+.header-dark .nav-link-smart:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .header-dark .primary-menu .navbar-nav > li {
+    width: 100%;
+  }
+
+  .header-dark .nav-link-smart {
+    color: #111827 !important;     /* black text */
+    font-size: 0.8rem;             /* smaller text */
+    padding: 0.65rem 1rem;
+    justify-content: flex-start;   /* icon + text left aligned */
+  }
+
+  .header-dark .nav-icon {
+    font-size: 1.05rem;            /* icon more prominent */
+    width: 22px;                   /* aligns icons vertically */
+    text-align: center;
+    color: #6b7280;                /* soft gray like reference */
+  }
+
+  #header-nav {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 0.5rem 0;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  }
+}
+
+/* .header-dark .navbar-nav .active > .nav-link-smart {
+  color: #2563eb !important;
+} */
+
+@media (max-width: 991px) {
+  .header-dark .navbar-nav .active > .nav-link-smart .nav-icon {
+    color: #2563eb; /* primary blue */
+  }
+}
+
+
+/* =========================================
+   UI Radial Glow (Reusable Utility)
+========================================= */
+
+.ui-glow-radial {
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(59, 130, 246, 0.12),
+    transparent 65%
+  );
+  animation: uiGlowSpin 14s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Animation */
+@keyframes uiGlowSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* =========================================
+   App Section Header (Blue Background Safe)
+========================================= */
+
+.app-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  background: #0C6DA0;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  margin-bottom: 1.5rem;
+}
+
+/* Icon */
+.app-section-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* Text */
+.app-section-text h1 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.app-section-text p {
+  font-size: 0.75rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+@media (max-width: 576px) {
+  .app-section-header {
+    padding: 0.85rem 1rem;
+  }
+
+  .app-section-text h1 {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* =========================================
+   Referral Code Box
+========================================= */
+
+.referral-code-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.85rem;
+  background: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  font-size: 1.85rem;
+}
+
+.referral-code {
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: 0.04em;
+}
+
+/* Copy button */
+.copy-btn {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 1.9rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.copy-btn:hover {
+  color: #1d4ed8;
 }
