@@ -5995,7 +5995,23 @@ body {
   color: #ffffff !important;
 }
 
+/* ======================================
+   Advertisement Modal – Smooth Slow Motion
+====================================== */
 
+#adModal .modal-dialog {
+  transform: scale(0.88);
+  transition:
+    transform 0.88s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+#adModal.show .modal-dialog {
+  transform: scale(1);
+}
+
+
+/* Mobile image constraint */
 @media (max-width: 576px) {
   #adModal img {
     max-height: 220px;

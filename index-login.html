@@ -692,11 +692,15 @@
 </div>
 <!-- Advertisement Modal End -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var adModal = new bootstrap.Modal(document.getElementById('adModal'));
-    adModal.show();
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      var modalEl = document.getElementById('adModal');
+      var adModal = new bootstrap.Modal(modalEl);
+      adModal.show();
+    }, 300); // wait for preloader fade-out
   });
 </script>
+
 
 <!-- Script --> 
 <script src="vendor/jquery/jquery.min.js"></script> 
