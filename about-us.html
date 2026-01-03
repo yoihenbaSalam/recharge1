@@ -68,7 +68,7 @@
                 </li>
                 
                 <li class="dropdown active">
-                  <a class="nav-link-smart" href="#">
+                  <a class="nav-link-smart" href="gallery.html">
                     <i class="fas fa-exchange-alt nav-icon"></i>
                     <span>Gallery</span>
                   </a>
@@ -438,6 +438,22 @@
   </div>
 </div>
 <!-- OTP Modal End --> 
+
+
+<!-- Script --> 
+<script>
+  // Login redirect
+  document.getElementById('loginForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.location.href = 'index-login.html';
+  });
+
+  // Signup redirect
+  document.getElementById('signupForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.location.href = 'index-login.html';
+  });
+</script>
 
 <!-- Script --> 
 <script src="vendor/jquery/jquery.min.js"></script> 
