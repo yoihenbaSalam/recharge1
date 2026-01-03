@@ -2790,7 +2790,7 @@ html[dir="rtl"] .nav-pills.flex-column.alternate .nav-link:before {
   height: 3px;
   width: 100%;
   content: ' ';
-  background-color: #0071cc;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   bottom: 1px;
@@ -5279,7 +5279,7 @@ body {
 
 @media (max-width: 575px) {
   .service-content h5 {
-    font-size: 0.8rem;        /* smaller, cleaner */
+    font-size: 0.6rem;        /* smaller, cleaner */
     line-height: 1.2;
     margin-bottom: 0;
     white-space: nowrap;     /* keep one line */
@@ -5918,4 +5918,41 @@ body {
 
 .copy-btn:hover {
   color: #1d4ed8;
+}
+/* Secondary Nav - default state */
+.secondary-nav .nav-link {
+  color: #dde5ee !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.secondary-nav .nav-link i {
+  color: #dde5ee !important;
+  font-size: 1.05rem;
+}
+
+/* ACTIVE tab - blue */
+.secondary-nav .nav-link.active {
+  color: #0071cc !important;
+}
+
+.secondary-nav .nav-link.active i {
+  color: #0071cc !important;
+}
+
+/* Hover (non-active) */
+.secondary-nav .nav-link:not(.active):hover {
+  color: #ffffff !important;
+}
+
+.secondary-nav .nav-link:not(.active):hover i {
+  color: #ffffff !important;
+}
+
+
+@media (max-width: 576px) {
+  #adModal img {
+    max-height: 220px;
+    object-fit: cover;
+  }
 }

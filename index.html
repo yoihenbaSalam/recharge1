@@ -51,61 +51,49 @@
           <!-- Primary Navigation
           ============================================= -->
           <nav class="primary-menu navbar navbar-expand-lg">
-            <div id="header-nav" class="collapse navbar-collapse">
-              <ul class="navbar-nav">
-                <li class="dropdown active">
-                  <a class="nav-link-smart" href="index.html">
-                    <i class="fas fa-home nav-icon"></i>
-                    <span>Home</span>
-                  </a>
-                </li>
-                
-                <li class="dropdown active">
-                  <a class="nav-link-smart" href="mobile-recharge.html">
-                    <i class="fas fa-mobile-alt nav-icon"></i>
-                    <span>Mobile Recharge</span>
-                  </a>
-                </li>
-                
-                <li class="dropdown active">
-                  <a class="nav-link-smart" href="index.html">
-                    <i class="fas fa-exchange-alt nav-icon"></i>
-                    <span>Balance Transfer</span>
-                  </a>
-                </li>
-                
-                <li class="dropdown active">
-                  <a class="nav-link-smart" href="electricity.html">
-                    <i class="fas fa-bolt nav-icon"></i>
-                    <span>Mspdcl</span>
-                  </a>
-                </li>
-                
-                <li class="dropdown active">
-                  <a class="nav-link-smart" href="transactions.html">
-                    <i class="fas fa-history nav-icon"></i>
-                    <span>Transaction History</span>
-                  </a>
-                </li>
-                
-                <li class="dropdown active">
-                  <a class="nav-link-smart" href="add-wallet.html">
-                    <i class="fas fa-wallet nav-icon"></i>
-                    <span>Add to Wallet</span>
-                  </a>
-                </li>
-                       
-       
-              </ul>
-            </div>
-          </nav>
-          <!-- Primary Navigation end --> 
+  <div id="header-nav" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
 
+      <li class="dropdown active">
+        <a class="nav-link-smart" href="index.html">
+          <i class="fas fa-home nav-icon"></i>
+          <span>Home</span>
+        </a>
+      </li>
 
+      <li class="dropdown active">
+        <a class="nav-link-smart" href="#">
+          <i class="fas fa-th-large nav-icon"></i>
+          <span>Category</span>
+        </a>
+      </li>
 
+      <li class="dropdown active">
+        <a class="nav-link-smart" href="#">
+          <i class="fas fa-images nav-icon"></i>
+          <span>Gallery</span>
+        </a>
+      </li>
 
-      
-          
+      <li class="dropdown active">
+        <a class="nav-link-smart" href="about-us.html">
+          <i class="fas fa-info-circle nav-icon"></i>
+          <span>About Us</span>
+        </a>
+      </li>
+
+      <li class="dropdown active">
+        <a class="nav-link-smart" href="contact-us.html">
+          <i class="fas fa-envelope nav-icon"></i>
+          <span>Contact Us</span>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+          <!-- Primary Navigation end -->       
           <!-- Collapse Button
 		  =============================== -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"> <span></span> <span></span> <span></span> </button>
@@ -125,232 +113,442 @@
   
   <!-- Content
   ============================================= -->
-  <div id="content">
+<!-- Content
+============================================= -->
+<div id="content">
 
-
-    <section class="wallet-header">
-      <div class="container">
-        <div class="wallet-card-pro">
-    
-          <!-- Background layers -->
-          <span class="wallet-bg"></span>
-          <span class="wallet-lines"></span>
-    
-          <!-- Decorative SVG -->
-          <svg class="wallet-shape" viewBox="0 0 200 200" aria-hidden="true">
-            <path
-              d="M40,-60C55,-50,70,-40,76,-25C82,-10,78,10,68,28C58,46,42,62,22,70C2,78,-22,78,-40,68C-58,58,-70,38,-74,18C-78,-2,-74,-22,-64,-38C-54,-54,-38,-66,-20,-72C-2,-78,18,-76,40,-60Z"
-              transform="translate(100 100)"
-            />
-          </svg>
-    
-          <!-- Left: User -->
-          <div class="wallet-info">
-            <div class="wallet-avatar">J</div>
-            <div>
-              <p class="wallet-greet">Welcome back</p>
-              <h5 class="wallet-name">Jessica Parker</h5>
-              <p class="wallet-id">User ID · #WPX-10293</p>
-            </div>
-          </div>
-    
-          <!-- Right: Balance -->
-          <div class="wallet-balance">
-            <p class="balance-label">Wallet Balance</p>
-            <h2 class="balance-amount">₹9,807</h2>
-            <a href="wallet-add.html" class="btn btn-outline-primary btn-sm">
-              Add Wallet
-            </a>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-    
-            
-
-        <!-- Banner
-    ============================================= -->
-    <div class="bg-white shadow-md py-5">
-      <div class="container">
-        <div class="owl-carousel owl-theme" data-autoplay="true" data-loop="true" data-nav="true" data-margin="30" data-items-xs="1" data-items-sm="2" data-items-md="2" data-items-lg="3">
-          <div class="item"><a href="#"><img class="img-fluid rounded" src="images/slider/banner-1.jpg" alt="banner" /></a></div>
-          <div class="item"><a href="#"><img class="img-fluid rounded" src="images/slider/banner-6.jpg" alt="banner" /></a></div>
-          <div class="item"><a href="#"><img class="img-fluid rounded" src="images/slider/banner-2.jpg" alt="banner" /></a></div>
-        </div>
-      </div>
+  <!-- Secondary Navigation (Tabs)
+  ============================================= -->
+  <div class="bg-secondary">
+    <div class="container">
+      <ul class="nav secondary-nav nav-tabs border-0" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-mobile" type="button">
+            <i class="fas fa-mobile-alt me-1"></i> Mobile
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-electricity" type="button">
+            <i class="fas fa-bolt me-1"></i> Electricity
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-wallet" type="button">
+            <i class="fas fa-wallet me-1"></i> Wallet
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-transactions" type="button">
+            <i class="fas fa-receipt me-1"></i> Transactions
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-addwallet" type="button">
+            <i class="fas fa-plus-circle me-1"></i> Add Wallet
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-referral" type="button">
+            <i class="fas fa-user-friends me-1"></i> Refer & Earn
+          </button>
+        </li>
+      </ul>
     </div>
-    <!-- Banner end --> 
-    <section class="services-section">
-      <div class="container">
-        <div class="row g-4">
-    
-          <!-- Card -->
-          <div class="col-6 col-md-6 col-lg-4">
-            <a href="mobile-recharge.html" class="service-card-pro">
-              <span class="service-more">⋯</span>
-              <div class="service-icon">
-                <i class="fas fa-mobile-alt"></i>
-              </div>
-              <div class="service-content">
-                <h5>Mobile Recharge</h5>
-                <p>Prepaid & postpaid recharges for all major operators.</p>
-              </div>
-            </a>
-          </div>
-    
-          <div class="col-6 col-md-6 col-lg-4">
-            <a href="electricity.html" class="service-card-pro">
-              <span class="service-more">⋯</span>
-              <div class="service-icon">
-                <i class="fas fa-bolt"></i>
-              </div>
-              <div class="service-content">
-                <h5>Electricity Bills</h5>
-                <p>Pay MSPDCL and other electricity bills instantly.</p>
-              </div>
-            </a>
-          </div>
-    
-          <div class="col-6 col-md-6 col-lg-4">
-            <a href="wallet-transfer.html" class="service-card-pro">
-              <span class="service-more">⋯</span>
-              <div class="service-icon">
-                <i class="fas fa-wallet"></i>
-              </div>
-              <div class="service-content">
-                <h5>Wallet Transfer</h5>
-                <p>Send money securely to users and bank accounts.</p>
-              </div>
-            </a>
-          </div>
-    
-          <div class="col-6 col-md-6 col-lg-4">
-            <a href="transactions.html" class="service-card-pro">
-              <span class="service-more">⋯</span>
-              <div class="service-icon">
-                <i class="fas fa-receipt"></i>
-              </div>
-              <div class="service-content">
-                <h5>Transaction History</h5>
-                <p>View, filter and download all past transactions.</p>
-              </div>
-            </a>
-          </div>
-    
-          <div class="col-6 col-md-6 col-lg-4">
-            <a href="add-wallet.html" class="service-card-pro">
-              <span class="service-more">⋯</span>
-              <div class="service-icon">
-                <i class="fas fa-plus-circle"></i>
-              </div>
-              <div class="service-content">
-                <h5>Add to Wallet</h5>
-                <p>Top up your wallet using cards, UPI or net banking.</p>
-              </div>
-            </a>
-          </div>
-    
-          <div class="col-6 col-md-6 col-lg-4">
-            <a href="referral.html" class="service-card-pro">
-              <span class="service-more">⋯</span>
-              <div class="service-icon">
-                <i class="fas fa-user-friends"></i>
-              </div>
-              <div class="service-content">
-                <h5>Refer & Earn</h5>
-                <p>Invite friends and earn wallet cashback rewards.</p>
-              </div>
-            </a>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-    
-
-<!-- Recent Transactions -->
-<section class="transactions-section">
-  <div class="container">
-    <div class="section-head">
-      <h5>Recent Transactions</h5>
-      <a href="transactions.html">View All</a>
-    </div>
-
-    <div class="transaction-card debit">
-      <div class="tx-left">
-        <h6>Verizon – Unlimited Plan</h6>
-        <span class="tx-date">10/12/2025</span>
-      </div>
-      <div class="tx-right">
-        <span class="amount negative">-$299.00</span>
-        <span class="cashback positive">+$29.90 cashback</span>
-      </div>
-    </div>
-
-    <div class="transaction-card credit">
-      <div class="tx-left">
-        <h6>Cashback Received</h6>
-        <span class="tx-date">10/12/2025</span>
-      </div>
-      <div class="tx-right">
-        <span class="amount positive">+$29.90</span>
-      </div>
-    </div>
-
-    <div class="transaction-card debit">
-      <div class="tx-left">
-        <h6>AT&amp;T – Data Pack 5GB</h6>
-        <span class="tx-date">10/11/2025</span>
-      </div>
-      <div class="tx-right">
-        <span class="amount negative">-$199.00</span>
-        <span class="cashback positive">+$19.90 cashback</span>
-      </div>
-    </div>
-
   </div>
-</section>
+  <!-- Secondary Navigation end -->
+
+  <!-- Tabs Content
+  ============================================= -->
+  <section class="container py-4">
+    <div class="tab-content bg-white shadow-md rounded p-4">
+
+      <!-- ===============================
+           MOBILE TAB (IMPLEMENTED)
+      =============================== -->
+      <div class="tab-pane fade show active" id="tab-mobile">
+
+          <!-- Mobile Recharge Form -->
+               
+          <section class="container">
+            <div class="bg-white rounded">
+              <div class="row g-4"> 
+                
+                <!-- Mobile Recharge
+                ============================================= -->
+                <div class="col-lg-4 col-xxl-5">
+                  <h2 class="text-4 mb-3">Mobile Recharge or Bill Payment</h2>
+                  <form id="recharge-bill" method="post">
+                    <div class="mb-3">
+                      <div class="form-check form-check-inline">
+                        <input id="prepaid" name="rechargeBillpayment" class="form-check-input" checked="" required type="radio">
+                        <label class="form-check-label" for="prepaid">Prepaid</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input id="postpaid" name="rechargeBillpayment" class="form-check-input" required type="radio">
+                        <label class="form-check-label" for="postpaid">Postpaid</label>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" data-bv-field="number" id="mobileNumber" required placeholder="Enter Mobile Number">
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select" id="operator" required="">
+                        <option value="">Select Your Operator</option>
+                        <option>1st Operator</option>
+                        <option>2nd Operator</option>
+                        <option>3rd Operator</option>
+                        <option>4th Operator</option>
+                        <option>5th Operator</option>
+                        <option>6th Operator</option>
+                        <option>7th Operator</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3"> <span class="input-group-text">₹</span> <a href="#" data-bs-target="#view-plans" data-bs-toggle="modal" class="view-plans-link">View Plans</a>
+                      <input class="form-control" id="amount" placeholder="Enter Amount" required type="text">
+                    </div>
+                    <div class="d-grid"><a class="btn btn-primary" href="recharge-order-summary.html">Continue to Recharge</a></div>
+                  </form>
+                </div>
+                <!-- Mobile Recharge end --> 
+                
+                <!-- Slideshow
+                ============================================= -->
+                <div class="col-lg-8 col-xxl-7">
+                  <div class="owl-carousel owl-theme single-slider" data-animateout="fadeOut" data-animatein="fadeIn" data-autoplay="true" data-loop="true" data-autoheight="true" data-nav="true" data-items="1">
+                    <div class="item"><a href="#"><img class="img-fluid" src="images/slider/banner-1.jpg" alt="banner 1" /></a></div>
+                    <div class="item"><a href="#"><img class="img-fluid" src="images/slider/banner-2.jpg" alt="banner 2" /></a></div>
+                  </div>
+                </div>
+                <!-- Slideshow end --> 
+                
+              </div>
+            </div>
+          </section>
+                <!-- <div class="col-lg-4 col-xxl-5">
+                  <h2 class="text-4 mb-3">Mobile Recharge or Bill Payment</h2>
+
+                  <form>
+                    <div class="mb-3">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" checked>
+                        <label class="form-check-label">Prepaid</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio">
+                        <label class="form-check-label">Postpaid</label>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Enter Mobile Number" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <select class="form-select" required>
+                        <option value="">Select Operator</option>
+                        <option>Airtel</option>
+                        <option>Jio</option>
+                        <option>Vi</option>
+                        <option>BSNL</option>
+                      </select>
+                    </div>
+
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">₹</span>
+                      <input class="form-control" placeholder="Enter Amount" required>
+                    </div>
+
+                    <div class="d-grid">
+                      <a href="login.html" class="btn btn-primary">
+                        Login to Continue
+                      </a>
+                    </div>
+                  </form>
+                </div> -->
 
 
-    <!-- Refer & Earn
-    ============================================= -->
-    <section class="section bg-white shadow-md px-5">
-      <div class="container">
-        <h2 class="text-9 fw-600 text-center">Refer & Earn</h2>
-        <p class="lead text-center mb-5">Refer your friends and earn up to $20.</p>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="featured-box style-4">
-              <div class="featured-box-icon bg-primary text-white rounded-circle"> <i class="fas fa-bullhorn"></i> </div>
-              <h3>You Refer Friends</h3>
-              <p class="text-3">Share your referral link with friends. They get $10.</p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="featured-box style-4">
-              <div class="featured-box-icon bg-primary text-white rounded-circle"> <i class="fas fa-sign-in-alt"></i> </div>
-              <h3>Your Friends Register</h3>
-              <p class="text-3">Your friends Register with using your referral link.</p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="featured-box style-4">
-              <div class="featured-box-icon bg-primary text-white rounded-circle"> <i class="fas fa-dollar-sign"></i> </div>
-              <h3>Earn You</h3>
-              <p class="text-3">You get $20. You can use these credits to take recharge.</p>
-            </div>
-          </div>
+      </div>
+
+      <!-- ===============================
+           ELECTRICITY TAB (PLACEHOLDER)
+      =============================== -->
+      <div class="tab-pane fade" id="tab-electricity">
+        <div class="text-center py-5">
+          <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+          <h4>Electricity Bill Payments</h4>
+          <p class="text-muted">Pay electricity bills from multiple providers.</p>
+      
+          <a href="#"
+             class="btn btn-outline-primary mt-2"
+             data-bs-toggle="modal"
+             data-bs-target="#login-modal">
+            Login to Continue
+          </a>
         </div>
       </div>
-      <div class="text-center pt-4"> <a href="referral.html" class="btn btn-primary">Get Your Referral Code</a> </div>
-    </section>
-    <!-- Refer & Earn end --> 
-    
-    
-    
+      
+
+    <!-- ===============================
+     WALLET TRANSFER TAB
+=============================== -->
+<div class="tab-pane fade" id="tab-wallet">
+  <div class="text-center py-5">
+    <i class="fas fa-wallet fa-3x text-primary mb-3"></i>
+    <h4>Wallet Transfer</h4>
+    <p class="text-muted">Send money securely to other users.</p>
+
+    <a href="#"
+       class="btn btn-outline-primary mt-2"
+       data-bs-toggle="modal"
+       data-bs-target="#login-modal">
+      Login Required
+    </a>
   </div>
+</div>
+
+<!-- ===============================
+     TRANSACTIONS TAB
+=============================== -->
+<div class="tab-pane fade" id="tab-transactions">
+  <div class="text-center py-5">
+    <i class="fas fa-receipt fa-3x text-primary mb-3"></i>
+    <h4>Transaction History</h4>
+    <p class="text-muted">View and download past transactions.</p>
+
+    <a href="#"
+       class="btn btn-outline-primary mt-2"
+       data-bs-toggle="modal"
+       data-bs-target="#login-modal">
+      Login Required
+    </a>
+  </div>
+</div>
+
+<!-- ===============================
+     ADD WALLET TAB
+=============================== -->
+<div class="tab-pane fade" id="tab-addwallet">
+  <div class="text-center py-5">
+    <i class="fas fa-plus-circle fa-3x text-primary mb-3"></i>
+    <h4>Add Money to Wallet</h4>
+    <p class="text-muted">Top up your wallet via UPI, card or net banking.</p>
+
+    <a href="#"
+       class="btn btn-outline-primary mt-2"
+       data-bs-toggle="modal"
+       data-bs-target="#login-modal">
+      Login Required
+    </a>
+  </div>
+</div>
+
+<!-- ===============================
+     REFER & EARN TAB
+=============================== -->
+<div class="tab-pane fade" id="tab-referral">
+  <div class="text-center py-5">
+    <i class="fas fa-user-friends fa-3x text-primary mb-3"></i>
+    <h4>Refer & Earn</h4>
+    <p class="text-muted">Invite friends and earn cashback rewards.</p>
+
+    <a href="#"
+       class="btn btn-outline-primary mt-2"
+       data-bs-toggle="modal"
+       data-bs-target="#login-modal">
+      Login Required
+    </a>
+  </div>
+</div>
+
+
+    </div>
+  </section>
+
+</div>
+<!-- Content end -->
+
   <!-- Content end --> 
+
+
+<!-- Modal Dialog - View Plans
+============================================= -->
+<div id="view-plans" class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Browse Plans</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3 mb-4" method="post">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <select class="form-select" required="">
+              <option value="">Select Your Operator</option>
+              <option>1st Operator</option>
+              <option>2nd Operator</option>
+              <option>3rd Operator</option>
+              <option>4th Operator</option>
+              <option>5th Operator</option>
+              <option>6th Operator</option>
+              <option>7th Operator</option>
+            </select>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <select class="form-select" required="">
+              <option value="">Select Your Circle</option>
+              <option>1st Circle</option>
+              <option>2nd Circle</option>
+              <option>3rd Circle</option>
+              <option>4th Circle</option>
+              <option>5th Circle</option>
+              <option>6th Circle</option>
+              <option>7th Circle</option>
+            </select>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <select class="form-select" required="">
+              <option value="">All Plans</option>
+              <option>Topup</option>
+              <option>Full Talktime</option>
+              <option>Validity Recharge</option>
+              <option>SMS</option>
+              <option>Data</option>
+              <option>Unlimited Talktime</option>
+              <option>STD</option>
+            </select>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 d-grid">
+            <button class="btn btn-primary" type="submit">View Plans</button>
+          </div>
+        </form>
+        <div class="plans">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹10<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">8<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">7 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Talktime ₹8 & 2 Local & National SMS & Free SMS valid for 2 day(s)</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹15<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">13<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">15 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Regular Talktime</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹50<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">47<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">28 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">47 Local Vodafone min free </div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹100<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">92<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">28 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Local min 92 & 10 Local & National SMS & Free SMS valid for 28 day(s).</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹150<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">143<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">60 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Talktime ₹143 & 50 Local & National SMS & Free SMS valid for 60 day(s).</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹220<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">8 <span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">7 Days <span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Full Talktime</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹250<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">250<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">28 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Full Talktime + 50 SMS per day for 28 days.</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹300<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">301<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">64 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Full Talktime</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹410<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">0<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">28 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Unlimited Local,STD & Roaming calls</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹501<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">510<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">180 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Full Talktime + 100 SMS per day for 180 days.</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹799<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">820<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">250 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Full Talktime + 100 SMS per day for 250 days.</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="row align-items-center">
+            <div class="col-4 col-lg-2 text-5 text-primary text-center">₹999<span class="text-1 text-muted d-block">Amount</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">1099<span class="text-1 text-muted d-block">Talktime</span></div>
+            <div class="col-4 col-lg-2 text-3 text-center">356 Days<span class="text-1 text-muted d-block">Validity</span></div>
+            <div class="col-7 col-lg-3 my-2 my-lg-0 text-1 text-muted">Full Talktime + 100 SMS per day for 356 days.</div>
+            <div class="col-5 col-lg-3 my-2 my-lg-0 text-end text-lg-center">
+              <button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge</button>
+            </div>
+          </div>
+          <hr class="my-4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Dialog - View Plans end --> 
+
   
   <!-- Footer
   ============================================= -->
@@ -376,7 +574,7 @@
             <div class="featured-box text-center">
               <div class="featured-box-icon"> <i class="fas fa-bullhorn"></i> </div>
               <h4>Refer & Earn</h4>
-              <p>Invite a friend to sign up and earn up to $100.</p>
+              <p>Invite a friend to sign up and earn up to ₹100.</p>
             </div>
           </div>
           <div class="col-sm-6 col-md-3">
@@ -641,6 +839,20 @@
 
 
 <!-- Script --> 
+<script>
+  // Login redirect
+  document.getElementById('loginForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.location.href = 'index-login.html';
+  });
+
+  // Signup redirect
+  document.getElementById('signupForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.location.href = 'index-login.html';
+  });
+</script>
+
 <script src="vendor/jquery/jquery.min.js"></script> 
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
 <script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
